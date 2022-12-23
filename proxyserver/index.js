@@ -6,6 +6,8 @@ var express = require("express"),
   //Create parser object for XML parsing
   xmlparser = new xml2js.Parser();
 
+const path = require('path');
+
 //Node fetch is funky since 3.0, supports only import statements, so easy workaround is this
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
