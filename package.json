@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node proxyserver/index.js",
-    "build": "cd proxyserver && npm install && cd .. && npm install && npm run build",
+    "build": "npm install && npm run build && cd proxyserver && npm install",
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000",
