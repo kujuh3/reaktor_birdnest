@@ -12,6 +12,7 @@ const fetch = (...args) =>
 
 let dnzDrones = [];
 
+app.use(express.static(path.resolve(__dirname, "../build")));
 app.use(bodyParser.json());
 
 //Fetching the pilot information of given serial number
